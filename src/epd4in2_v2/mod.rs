@@ -401,3 +401,15 @@ where
         Ok(())
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn epd_size() {
+        assert_eq!(WIDTH, 400);
+        assert_eq!(HEIGHT, 300);
+        assert_eq!(DEFAULT_BACKGROUND_COLOR, Color::White);
+    }
+}
